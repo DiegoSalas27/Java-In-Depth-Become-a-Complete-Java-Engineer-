@@ -1,2 +1,7 @@
 transcripts.*
 ~$anscripts.*
+.DS_Store
+.idea
+docs
+Java-In-Depth-Become-a-Complete-Java-Engineer-.iml
+*.iml
