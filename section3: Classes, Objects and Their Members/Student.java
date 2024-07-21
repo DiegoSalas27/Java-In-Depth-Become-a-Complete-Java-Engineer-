@@ -16,6 +16,10 @@ public class Student {
 
     double gpa2 = 3.8e4; // scientific notation
 
+    double tuitionFees = 12000.0, internationalFees = 5000.0; // Multiple variable declaration
+
+    double ca = internationalFees = 5000.0; // Multiple variable declaration
+
     char degree = 'B';
 
     char degreeUnicode = '\u0042'; // unicode representation in hexadecimal (UTF 16) <- also called code point
@@ -28,6 +32,12 @@ public class Student {
     void compute() {
         computeCount += 1;
         int nextId = id + 1; // local variable
+
+        System.out.println("tuitionFees: " + tuitionFees);
+
+        double a = 100, b = a + 5000;
+
+        System.out.println("b: " + b);
 
         System.out.println("id: " + id);
         System.out.println("nextId: " + nextId);
