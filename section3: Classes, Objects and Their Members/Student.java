@@ -51,6 +51,8 @@ public class Student {
         System.out.println("degreeUnicode: " + degreeUnicode);
         System.out.println("happyFace: " + happyFace);
         System.out.println("Student.computeCount: " + computeCount + "\n");
+        System.out.println("Type casting byte to char " + (char) 65);
+        System.out.println("Type casting byte to char " + (char) -65);
     }
 
     public static void main(String[] args) {
