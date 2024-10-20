@@ -23,6 +23,36 @@ class BasicsDemo {
     int intBinary = 0b01000001; // 65
     System.out.println("intBinary: " + intBinary);
   }
+
+  static void arrays() {
+    System.out.println("\nInside arrays...");
+    /* int[] scores = new int[4];
+    int scores[] = new int[4];
+
+    scores[0] = 90;
+    scores[1] = 70;
+    scores[2] = 80;
+    scores[3] = 100;
+    */
+
+//    int[] scores = new int[] {90, 70, 80, 100}; // size is inferred.
+
+    int[] scores = {90, 70, 80, 100}; // shortcut: can only be used when first initializing an array (cannot be used to reinitialize).
+
+    System.out.println("Mid-Term 1: " + scores[0]);
+    System.out.println("Mid-Term 2: " + scores[1]);
+    System.out.println("Final: " + scores[2]);
+    System.out.println("Project: " + scores[3]);
+    System.out.println("# exams: " + scores.length);
+
+    Student[] students = new Student[3];
+    students[0] = new Student();
+    students[1] = new Student();
+    students[2] = new Student();
+    System.out.println("Students 1: " + students[0]);
+    System.out.println("Students 2: " + students[1]);
+    System.out.println("Students 3: " + students[2]);
+  }
   
   public static void main(String[] args) {	
 	   	// Language Basics 1
@@ -42,5 +72,7 @@ class BasicsDemo {
     BigDecimal first = new BigDecimal("0.1");
     BigDecimal second = new BigDecimal("0.2");
     System.out.println(first.add(second));
+
+    arrays();
   }
 }
