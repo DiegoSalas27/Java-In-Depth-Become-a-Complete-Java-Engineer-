@@ -53,6 +53,19 @@ class BasicsDemo {
     System.out.println("Students 2: " + students[1]);
     System.out.println("Students 3: " + students[2]);
   }
+
+  static void threeDimensionalArrays() {
+    int[][][] unitsSold = new int[][][] {
+            {       // New York
+                    {0,0,0,0}, // Jan
+                    {0,0,0,0}, // Feb
+                    {0,0,0,0}, // Mar
+                    {0,850,0,0}, // Apr
+            },//...
+    };
+
+    System.out.println("unitsSold 3: " + unitsSold[0][3][1]);
+  }
   
   public static void main(String[] args) {	
 	   	// Language Basics 1
@@ -74,5 +87,6 @@ class BasicsDemo {
     System.out.println(first.add(second));
 
     arrays();
+    threeDimensionalArrays();
   }
 }
